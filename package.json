@@ -1,0 +1,30 @@
+{
+  "name": "fsobserve",
+  "version": "1.0.1",
+  "description": "A versatile Node.js module to scan a directory and return its structure as a nested object, a flat array of paths, or a JSON string.",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BobinMax/fsobserve.git"
+  },
+  "keywords": [
+    "directory",
+    "tree",
+    "file system",
+    "fs",
+    "json",
+    "list",
+    "scan",
+    "files"
+  ],
+  "author": "BobinMax <bobinmax@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BobinMax/fsobserve/issues"
+  },
+  "homepage": "https://github.com/BobinMax/fsobserve#readme"
+}
