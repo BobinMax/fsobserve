@@ -1,4 +1,4 @@
-# @bobinmax/ftree
+# fsobserve
 ````markdown
 
 A versatile and lightweight Node.js module to scan a directory and return its structure as a nested object, a flat array of paths, or a JSON string.
@@ -8,19 +8,19 @@ A versatile and lightweight Node.js module to scan a directory and return its st
 Install the package using npm:
 
 ```bash
-npm install @bobinmax/ftree
+npm install fsobserve
 ````
 
 ## Usage
 
-`@bobinmax/ftree` exports three separate functions to get the directory structure in your desired format.
+`fsobserve` exports three separate functions to get the directory structure in your desired format.
 
 ### `getTreeAsObject(path)`
 
 Returns a nested JavaScript object representing the full directory tree. This is useful for programmatic traversal and manipulation.
 
 ```javascript
-const { getTreeAsObject } = require('@bobinmax/ftree');
+const { getTreeAsObject } = require('fsobserve');
 
 const tree = getTreeAsObject('./src');
 
@@ -60,7 +60,7 @@ Example Output:
 Returns a simple, flat array containing the full paths of every file and directory within the target path.
 
 ```javascript
-const { getTreeAsArray } = require('@bobinmax/ftree');
+const { getTreeAsArray } = require('fsobserve');
 
 const paths = getTreeAsArray('./src');
 
@@ -81,7 +81,7 @@ Example Output:
 Returns a JSON string representation of the nested directory tree. Set the optional second argument to `true` for pretty-printing.
 
 ```javascript
-const { getTreeAsJson } = require('@bobinmax/ftree');
+const { getTreeAsJson } = require('fsobserve');
 
 // Get a minified JSON string
 const jsonString = getTreeAsJson('./src');
